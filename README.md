@@ -79,7 +79,7 @@ neo4j:
 
 ## Prerequisites
 
-- **Neo4j Community Edition 4.x or 5.x** with APOC plugin installed for wider metric coverage
+- **Neo4j Community Edition 5.x** with APOC plugin installed for wider metric coverage
 - **Java 23 or higher** (for building/running)
 - **Docker** (optional, for containerized deployment)
 
