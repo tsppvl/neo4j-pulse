@@ -10,7 +10,7 @@ class QueriesMetricsCollector : MetricCollector {
     override fun collect(session: Session): List<String> {
         val metrics = mutableListOf<String>()
         try {
-            val queriesResult = session.run("SHOW QUERIES")
+            val queriesResult = session.run("SHOW TRANSACTIONS")
             val activeQueriesCount = queriesResult.list().size
             metrics.add("# HELP neo4j_active_queries_total Number of currently active queries")
             metrics.add("# TYPE neo4j_active_queries_total gauge")
