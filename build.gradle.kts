@@ -29,7 +29,7 @@ tasks.test {
 }
 
 kotlin {
-    jvmToolchain(23)
+    jvmToolchain(25)
 }
 
 tasks.withType<Jar> {
